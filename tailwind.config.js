@@ -11,12 +11,12 @@ export default {
         black: '#111111 ',
         bgPeach2: '#EBD7BE',
         gray: '#595550',
-        white: '#E9E1D7',
+        lightPeach: '#E9E1D7',
       },
       fontFamily: {
         dmSans: ['DM Sans', 'sans-serif'],
+        roboto: ['Roboto Serif', 'serif'],
         sonderSans:  ['Sonder Sans', 'sans-serif'],
-        vinaSans: ["Vina Sans", 'sans-serif']
       },
     },
   },
