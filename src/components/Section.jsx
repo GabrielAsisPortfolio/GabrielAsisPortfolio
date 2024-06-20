@@ -18,7 +18,7 @@ const Section = ({ children, bottomLine }) => {
             width={15}
             height={15}      
             alt="X corners" />
-          <div className="border-t border-dashed border-black/35 h-[1.5px] w-[100vw] absolute bottom-0 z-1"></div>
+          <div className="border-t border-dashed border-black/35 h-[1.5px] w-[98.5vw] absolute bottom-0 z-1"></div>
         </>
       )}
     </div>
