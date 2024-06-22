@@ -26,7 +26,7 @@ const ProjectBox = ({ title, urlTitle, createdWhen, img1, img2, img3, url, categ
   const isFlexCol = flex === "col";
 
   return (
-  <div className="bg-bgPeach3 border-black rounded-lg h-fit relative drop-shadow-md">
+  <div className="bg-bgPeach3 border-black rounded-lg h-fit relative overflow-hidden drop-shadow-md auto">
       <div className="flex flex-row items-center justify-between py-2 px-4 bg-darkPeach gap-3 relative top-0 border-b-black/30 border-b-[1px] rounded-t-lg">
         <div className="flex flex-row px-4 bg-darkPeach gap-x-3">
           <img 

@@ -15,7 +15,7 @@ const Projects = () => {
           glow={false}
         />
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-3 grid-flow-dense">
         {projectDetails.map((project) => (
             <ProjectBox 
               key={project.id}
@@ -31,6 +31,24 @@ const Projects = () => {
             />
           ))}
         </div>
+
+        <div className=" mt-56">
+          <div className="bg-black w-[48%] h-20">
+
+          </div>
+
+          <div className="bg-darkPeach w-[48%] h-10">
+
+          </div>
+
+          <div className="bg-lightPeach w-[48%] h-20">
+
+          </div>
+
+          <div className="bg-gray w-[48%] h-20">
+
+          </div>
+        </div>  
       </div>
     </Section>
   )
