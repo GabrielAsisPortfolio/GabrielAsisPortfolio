@@ -1,8 +1,8 @@
 import X from "../assets/X.svg"
 
-const Section = ({ children, bottomLine }) => {
+const Section = ({ children, bottomLine, id }) => {
   return (
-    <div className="flex justify-center relative">
+    <div className="flex justify-center relative" id={id}>
       {children}
       {bottomLine && (
         <>

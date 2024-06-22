@@ -55,10 +55,12 @@ export default {
         bgPeach3: '#DACCBC',
         black: '#111111 ',
         gray: '#595550',
+        darkPeach: '#D4C3AE',
         lightPeach: '#E9E1D7',
         gradientStartYellow: '#E6BE8E',
         gradientEndOrange: '#C9887D',
         gradientEndYellow: '#F6C3B0',
+        gradientEndPeach: '#EDC9AF',
       },
       fontFamily: {
         dmSans: ['DM Sans', 'sans-serif'],

@@ -26,4 +26,8 @@
   p {
     @apply text-gray
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
