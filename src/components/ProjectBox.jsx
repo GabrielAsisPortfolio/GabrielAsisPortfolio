@@ -57,18 +57,18 @@ const ProjectBox = ({ title, urlTitle, createdWhen, img1, img2, img3, url, categ
         <div className={`flex flex-${flex} mb-2`}>
           <img 
             src={img1} 
-            className={`w-full ${isFlexCol ? 'mb-1' : 'w-1/3'} ${!isFlexCol && 'mr-1'}`}
+            className={`w-full ${isFlexCol ? 'mb-1' : 'w-[33%]'} ${!isFlexCol && 'mr-1'}`}
             alt="Image 1" /> 
 
           <img 
             src={img2} 
-            className={`w-full ${isFlexCol ? 'mb-1' : 'w-1/3'} ${!isFlexCol && 'mr-1'}`}
+            className={`w-full ${isFlexCol ? 'mb-1' : 'w-[33%]'} ${!isFlexCol && 'mr-1'}`}
             alt="Image 1" /> 
 
           {img3 && 
             <img 
               src={img3} 
-              className={`w-full ${isFlexCol ? '' : 'w-1/3'}`} 
+              className={`w-full ${isFlexCol ? '' : 'w-[33%]'}`} 
               alt="Image 1" 
             />
           }
