@@ -1,13 +1,18 @@
 import circle from "../assets/circle.svg"
 
-import html from "../assets/html.svg"
-import css from "../assets/css.svg"
-import js from "../assets/js.svg"
-import react from "../assets/reactJS.svg"
-import responsive from "../assets/responsive.svg"
-import tailwind from "../assets/tailwind.svg"
-import figma from "../assets/figma.svg"
-import android from "../assets/android studio.svg"
+import {
+  html,
+  css,
+  js,
+  react,
+  responsive,
+  tailwind,
+  figma,
+  android,
+  api,
+  python,
+  json,
+} from "../assets";
 
 import Button from "../components/Button"
 
@@ -19,16 +24,17 @@ const categoryIcons = {
   responsive,
   tailwind,
   figma,
-  android
+  android,
+  api,
+  python,
+  json,
 };
 
 const ProjectBox = ({ title, urlTitle, createdWhen, img1, img2, img3, url, categories, flex }) => {
-  const isFlexCol = flex === "col";
-
   return (
-  <div className="bg-bgPeach3 border-black rounded-lg h-fit relative overflow-hidden drop-shadow-md auto">
-      <div className="flex flex-row items-center justify-between py-2 px-4 bg-darkPeach gap-3 relative top-0 border-b-black/30 border-b-[1px] rounded-t-lg">
-        <div className="flex flex-row px-4 bg-darkPeach gap-x-3">
+  <div className="bg-bgPeach2/15 backdrop-blur-lg ring-1 ring-black/5 shadow rounded-lg h-fit w-full relative overflow-hidden">
+      <div className="flex flex-row items-center justify-between py-2 px-4 bg-darkPeach gap-3 relative top-0 overflow-hidden">
+        <div className="flex flex-row px-4 bg-darkPeach gap-x-3"> 
           <img 
             src={circle} 
             className="w-3"
@@ -45,7 +51,7 @@ const ProjectBox = ({ title, urlTitle, createdWhen, img1, img2, img3, url, categ
             alt="" />
         </div>
         <div className="bg-lightPeach rounded-full w-[90%] px-4 h-6 flex justify-start items-center">
-          <h2 className="font-dmSans text-[0.8rem] my-auto">https://
+          <h2 className="font-dmSans text-[0.6rem] md:text-[0.7rem] my-auto">https://
             <span className="font-bold italic">
               {urlTitle} 
             </span>
@@ -53,39 +59,48 @@ const ProjectBox = ({ title, urlTitle, createdWhen, img1, img2, img3, url, categ
         </div>
       </div>
 
-      <div className="py-6 px-8">
-        <div className={`flex flex-${flex} mb-2`}>
+      <div className="py-6 px-6 w-full">
+        <div className={` ${flex === "col" ? "flex" : "hidden"} flex-${flex} mb-2 justify-between w-full`}>
           <img 
             src={img1} 
-            className={`w-full ${isFlexCol ? 'mb-1' : 'w-[33%]'} ${!isFlexCol && 'mr-1'}`}
+            className={`w-full h-auto mb-1 lg:mb-2`}
             alt="Image 1" /> 
 
           <img 
             src={img2} 
-            className={`w-full ${isFlexCol ? 'mb-1' : 'w-[33%]'} ${!isFlexCol && 'mr-1'}`}
-            alt="Image 1" /> 
-
-          {img3 && 
-            <img 
-              src={img3} 
-              className={`w-full ${isFlexCol ? '' : 'w-[33%]'}`} 
-              alt="Image 1" 
-            />
-          }
+            className={`w-full h-auto mb-1 lg:mb-2`}
+            alt="Image 2" /> 
         </div>
 
-        <div className="flex flex-row justify-between items-start mb-8">
+        <div className={` ${flex === "row" ? "flex" : "hidden"} flex-${flex} mb-2 justify-between w-full`}>
+          <img 
+            src={img1} 
+            className=" w-[33%]"
+            alt="Image 1" /> 
+
+          <img 
+            src={img2} 
+            className=" w-[33%]"
+            alt="Image 2" /> 
+
+          <img 
+            src={img3} 
+            className=" w-[33%]"
+            alt="Image 3" /> 
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-start mb-8">
           <div className="flex flex-col items-start">
-            <h1 className="font-roboto font-medium text-[1.7rem] mb-0">{title}</h1>
-            <p className="font-roboto text-xs font-gray italic font-extralight">{createdWhen}</p>
+            <h1 className="font-roboto font-medium text-xl lg:text-[1.4rem]">{title}</h1>
+            <p className="font-roboto text-xs italic font-extralight mb-3 md:mb-0">{createdWhen}</p>
           </div>
 
-          <div className=" flex flex-row gap-x-3 items-start mt-1">
+          <div className="flex flex-row gap-x-2 mt-1 lg:mt-2">
             {categories.map(category => (
               <img 
                 key={category}
                 src={categoryIcons[category]} 
-                className="w-6"
+                className="h-5 lg:h-4"
                 alt={category} 
               />
             ))}
@@ -97,7 +112,7 @@ const ProjectBox = ({ title, urlTitle, createdWhen, img1, img2, img3, url, categ
           href={url}
         />
       </div>
-        
+      
     </div>
   )
 }
