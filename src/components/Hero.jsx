@@ -12,7 +12,6 @@ const Hero = () => {
   const glowRef = useRef(null);
 
   useEffect(() => {
-    // Ensure GSAP is imported and ready to use
     if (typeof window !== "undefined") {
       const textAnimations = gsap.timeline({ defaults: { ease: "power2.out" } });
 
@@ -31,7 +30,7 @@ const Hero = () => {
       gsap.fromTo(
         glowRef.current,
         { scale: 0.2, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 2, delay: 1.6},
+        { scale: 1, opacity: 1, duration: 1.2, delay: 1.6},
       );
     }
   }, []);
