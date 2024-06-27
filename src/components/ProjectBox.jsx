@@ -32,8 +32,8 @@ const categoryIcons = {
 
 const ProjectBox = ({ title, urlTitle, createdWhen, img1, img2, img3, url, categories, flex }) => {
   return (
-  <div className="bg-bgPeach2/15 backdrop-blur-lg ring-1 ring-black/5 shadow rounded-lg h-fit w-full relative overflow-hidden">
-      <div className="flex flex-row items-center justify-between py-2 px-4 bg-darkPeach gap-3 relative top-0 overflow-hidden">
+  <div className="bg-bgPeach backdrop-blur-lg border-[1px] border-black/5 shadow-lg rounded-lg h-fit w-full relative overflow-hidden">
+      <div className="flex flex-row items-center justify-between border-b-[1px] border-b-black/20 py-2 px-4 bg-darkPeach gap-3 relative top-0 overflow-hidden">
         <div className="flex flex-row px-4 bg-darkPeach gap-x-3"> 
           <img 
             src={circle} 

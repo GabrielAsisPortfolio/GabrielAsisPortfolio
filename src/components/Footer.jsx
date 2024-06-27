@@ -31,7 +31,7 @@ const Footer = () => {
           </p>
         </a>
       </div>
-      <div className="h-[0.5px] lg:h-[1px] bg-black/40 w-[95%] lg:w-[98%] mb-8"></div>
+      <div className="h-[0.5px] bg-black/40 w-[95%] mb-8"></div>
       <div className="flex items-center justify-center">
         <p className="text-black font-dmSans text-xs lg:text-sm">&copy; 2024 by Gabriel Gono Asis</p>
       </div>
