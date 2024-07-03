@@ -33,25 +33,25 @@ const categoryIcons = {
 const ProjectBox = ({ title, urlTitle, createdWhen, img1, img2, img3, url, categories, flex }) => {
   return (
   <div className="bg-bgPeach backdrop-blur-lg border-[1px] border-black/5 shadow-lg rounded-lg h-fit w-full relative overflow-hidden">
-      <div className="flex flex-row items-center justify-between border-b-[1px] border-b-black/20 py-2 px-4 bg-darkPeach gap-3 relative top-0 overflow-hidden">
-        <div className="flex flex-row px-4 bg-darkPeach gap-x-3"> 
+      <div className="flex flex-row items-center justify-between border-b-[1px] border-b-black/20 py-2 px-1 md:px-4 bg-darkPeach gap-3 relative top-0 overflow-hidden">
+        <div className="flex flex-row px-4 bg-darkPeach gap-x-2 md:gap-x-3"> 
           <img 
             src={circle} 
-            className="w-3"
+            className="w-2.5 md:w-3"
             alt="" />
 
           <img 
             src={circle} 
-            className="w-3"
+            className="w-2.5 md:w-3"
             alt="" />
           
           <img 
             src={circle} 
-            className="w-3"
+            className="w-2.5 md:w-3"
             alt="" />
         </div>
-        <div className="bg-lightPeach rounded-full w-[90%] px-4 h-6 flex justify-start items-center">
-          <h2 className="font-dmSans text-[0.6rem] md:text-[0.7rem] my-auto">https://
+        <div className="bg-lightPeach rounded-full w-[90%] px-3 md:px-4 h-5 md:h-6 flex justify-start items-center">
+          <h2 className="font-dmSans text-[0.55rem] md:text-[0.7rem] my-auto">https://
             <span className="font-bold italic">
               {urlTitle} 
             </span>
