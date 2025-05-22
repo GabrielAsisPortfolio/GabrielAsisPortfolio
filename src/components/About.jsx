@@ -69,11 +69,12 @@ const About = () => {
             </div>
           </div>
 
+          {/* FACE */}
           <div className="w-full h-full lg:w-[45%] flex flex-row items-center justify-between lg:justify-center lg:items-center relative">
             <img 
               ref={imgRef}
               src={face} 
-              className="w-2/5 lg:w-3/5 xl:w-[56%] 2xl:w-[50%] drop-shadow-xl"
+              className="w-2/5 lg:w-3/5 xl:w-[56%] 2xl:w-[50%] drop-shadow-xl hidden"
               alt="Face" 
             />
 
