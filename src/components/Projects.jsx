@@ -51,7 +51,7 @@ const Projects = () => {
             <div key={project.id} className="flex flex-col h-full">
               <ProjectBox 
                 title={project.title}
-                img1={project.img1}
+                img={project.img}
                 url={project.url}
                 categories={project.categories}
                 className="h-full"

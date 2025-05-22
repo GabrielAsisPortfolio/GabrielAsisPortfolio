@@ -1,5 +1,3 @@
-import circle from "../assets/circle.svg"
-
 import {
   FileCode2,
   Monitor,
@@ -32,13 +30,13 @@ const categoryIcons = {
   "E-commerce": ShoppingBag,
 };
 
-const ProjectBox = ({ title, img1, url, categories }) => {
+const ProjectBox = ({ title, img, url, categories }) => {
   return (
     <a href={url} className="bg-offWhite rounded-xl w-full relative overflow-hidden h-full hover:cursor-pointer">
       <div className="py-4 px-4 w-full">
         <div className={`mb-2 justify-between w-full overflow-hidden rounded-lg border-black/30 border group`}>
           <img 
-            src={img1} 
+            src={img} 
             className="w-full h-auto aspect-[16/9] object-cover object-top transition-transform duration-300 ease-in-out group-hover:scale-105"
             alt="Image 1" 
           /> 
