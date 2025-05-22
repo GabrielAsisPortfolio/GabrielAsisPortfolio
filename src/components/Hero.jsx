@@ -72,7 +72,7 @@ const Hero = () => {
               <div className="relative flex items-center justify-center">
                 <div 
                   ref={glowRef}
-                  className="absolute w-[250px] h-[50px] bg-radient-ellipse-c from-gradientStartBlue/50 to-gradientEndBlue/50 blur-[40px] z-10 rounded-full"></div>
+                  className="absolute w-[250px] h-[80px] bg-radient-ellipse-c from-gradientStartBlue to-gradientEndBlue blur-[40px] z-10 rounded-full"></div>
                 <p 
                   ref={titleRef}
                   className="text-black font-roboto text-lg sm:text-2xl lg:text-4xl xl:text-[3rem] text-end z-20 relative">

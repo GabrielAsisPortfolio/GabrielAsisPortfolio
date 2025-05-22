@@ -59,7 +59,7 @@ const About = () => {
             />
             <div 
               ref={glowRef}
-              className="absolute -top-[2rem] lg:top-[1rem] -left-[1rem] xl:-left-[1rem] bg-radient-ellipse-c from-gradientStartBlue/30 to-gradientEndBlue/30 m-auto w-32 h-32 md:w-50 md:h-50 blur-[40px] rounded-full -z-10"></div>
+              className="absolute -top-[2rem] lg:top-[1rem] -left-[1rem] xl:-left-[1rem] bg-radient-ellipse-c from-gradientStartBlue to-gradientEndBlue m-auto w-32 h-32 md:w-50 md:h-50 blur-[50px] rounded-full -z-10"></div>
             <div className="relative">
               <p 
                 ref={descRef}

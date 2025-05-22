@@ -27,7 +27,7 @@ const Header = () => {
   }, [menuOpen]);
 
   return (
-    <div className="top-0 py-2 lg:py-6 z-50 bg-white border-b border-black/60 lg:backdrop-blur-sm text-black">
+    <div className="top-0 py-2 lg:py-6 z-50 bg-white border-b border-black/60 lg:backdrop-blur-sm text-black w-full">
       <div className="flex items-center px-5 lg:px-7.5 xl:px-14 max-lg:py-4">
         <a className="block w-[12rem]" href="#hero">
           <h1 className="font-sonderSans text-2xl lg:text-3xl">GA</h1>

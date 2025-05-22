@@ -1,36 +1,38 @@
 import circle from "../assets/circle.svg"
 
 import {
-  html,
-  css,
-  js,
-  react,
-  responsive,
-  tailwind,
-  figma,
-  android,
-  api,
-  python,
-  json,
-} from "../assets";
+  FileCode2,
+  Monitor,
+  Building2,
+  Rocket,
+  PanelsTopLeft,
+  PanelTop,
+  Smartphone,
+  Layers,
+  Layers2,
+  AppWindow,
+  ShoppingBag,
+} from "lucide-react";
+
+import {
+  wordpress,
+} from "../assets"
 
 import Button from "../components/Button"
 
 const categoryIcons = {
-  html,
-  css,
-  js,
-  react,
-  responsive,
-  tailwind,
-  figma,
-  android,
-  api,
-  python,
-  json,
+  "Frontend": Layers2,
+  "WordPress": wordpress,
+  "Landing Page": AppWindow,
+  "Full-Stack": Layers,
+  "Organization": Building2,
+  "Tech Startup": Rocket,
+  "Smartphone App": Smartphone,
+  "Python": FileCode2,
+  "E-commerce": ShoppingBag,
 };
 
-const ProjectBox = ({ title, urlTitle, createdWhen, img1, img2, img3, url, categories, flex }) => {
+const ProjectBox = ({ title, img1, url, categories }) => {
   return (
     <a href={url} className="bg-offWhite rounded-xl w-full relative overflow-hidden h-full hover:cursor-pointer">
       <div className="py-4 px-4 w-full">
@@ -44,14 +46,19 @@ const ProjectBox = ({ title, urlTitle, createdWhen, img1, img2, img3, url, categ
 
         <div className="flex flex-col justify-start items-start gap-4">
           <div className="flex flex-row gap-x-2 mt-1 lg:mt-2">
-            {categories.map(category => (
-              <img 
-                key={category}
-                src={categoryIcons[category]} 
-                className="h-5 lg:h-4"  
-                alt={category} 
-              />
-            ))}
+            {categories.map(category => {
+              const Icon = categoryIcons[category];
+              return (
+                <span key={category} className="flex items-center gap-1 bg-gray-100 rounded-full px-5 py-1.5 text-xs font-medium bg-accent/20">
+                  {typeof Icon === "string" ? (
+                    <img src={Icon} className="h-4 w-auto text-accent" alt={category} />
+                  ) : (
+                    <Icon className="h-4 w-auto text-accent" aria-label={category} />
+                  )}
+                  <span className="font-dmSans text-accent">{category}</span>
+                </span>
+              );
+            })}
           </div>
           <div className="flex flex-col items-start">
             <h1 className="font-roboto font-medium text-xl lg:text-[1.4rem]">{title}</h1>

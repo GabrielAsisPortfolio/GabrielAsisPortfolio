@@ -11,6 +11,9 @@ import {
   iubb,
   kuu,
   lexchina,
+  zaan,
+  themecrafted,
+  trivio,
 } from "../assets";
 
 export const navigation = [
@@ -39,7 +42,7 @@ export const projectDetails = [
     img1: gow1,
     createdWhen: "Created on 1st yr of College",
     url: "https://gabrielasis.github.io/",
-    categories: ["html", "css", "js"],
+    categories: ["Frontend", "Landing Page"],
     flex: "col",
   },
   {
@@ -49,7 +52,7 @@ export const projectDetails = [
     img1: sm1,
     createdWhen: "Created on 2nd yr of College",
     url: "https://gabrielgonoasis.github.io/",
-    categories: ["html", "css", "js", "responsive"],
+    categories: ["Frontend", "Landing Page"],
     flex: "col",
   },
   {
@@ -59,18 +62,18 @@ export const projectDetails = [
     img1: taskmaster,
     createdWhen: "Created on 2nd yr of College",
     url: "https://github.com/GabrielAsis/TaskMaster-App.git",
-    categories: ["figma", "android", "js", "responsive"],
+    categories: ["Smartphone App"],
     flex: "row",
 
   },
   {
     id: "3",
-    title: "Tkinter Movie App",
+    title: "Tkinter Movie Pythong Project",
     urlTitle: "Tkinter_Python_App",
     img1: tkinter1,
     createdWhen: "Created on 2nd yr of College",
     url: "https://github.com/GabrielAsis/Data-Driven-App.git",
-    categories: ["python", "json", "api"],
+    categories: ["Python"],
     flex: "col",
   },
   {
@@ -78,8 +81,8 @@ export const projectDetails = [
     title: "AI for Developing Countries Forum",
     img1: aifod,
     createdWhen: "Created on 2nd yr of College",
-    url: "https://github.com/GabrielAsis/Data-Driven-App.git",
-    categories: ["python", "json", "api"],
+    url: "https://aifod.org/",
+    categories: ["WordPress", "Organization"],
     flex: "col",
   },
   {
@@ -87,8 +90,8 @@ export const projectDetails = [
     title: "KUU China",
     img1: kuu,
     createdWhen: "Created on 2nd yr of College",
-    url: "https://github.com/GabrielAsis/Data-Driven-App.git",
-    categories: ["python", "json", "api"],
+    url: "https://www.kuu.net/index.php/en/",
+    categories: ["WordPress", "Landing Page"],
     flex: "col",
   },
   {
@@ -96,8 +99,32 @@ export const projectDetails = [
     title: "LexChina",
     img1: lexchina,
     createdWhen: "Created on 2nd yr of College",
-    url: "https://github.com/GabrielAsis/Data-Driven-App.git",
-    categories: ["python", "json", "api"],
+    url: "https://lexchina.org/",
+    categories: ["WordPress", "Organization"],
+    flex: "col",
+  },
+  {
+    id: "7",
+    title: "Zaan",
+    img1: zaan,
+    url: "https://zaan.com/",
+    categories: ["WordPress", "Tech Startup"],
+    flex: "col",
+  },
+  {
+    id: "8",
+    title: "ThemeCrafted",
+    img1: themecrafted,
+    url: "https://themecrafted-frontend.onrender.com/",
+    categories: ["Full-Stack", "E-commerce"],
+    flex: "col",
+  },
+  {
+    id: "9",
+    title: "Trivio",
+    img1: trivio,
+    url: "https://trivio-site.vercel.app/",
+    categories: ["Full-Stack"],
     flex: "col",
   },
 ];

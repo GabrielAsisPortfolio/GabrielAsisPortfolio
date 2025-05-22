@@ -17,6 +17,11 @@ import aifod from "../assets/AIFOD.png"
 import iubb from "../assets/IUBB.png"
 import kuu from "../assets/KUU China.png"
 import lexchina from "../assets/LexChina.png"
+import zaan from "../assets/Zaan.png"
+
+import themecrafted from "../assets/ThemeCrafted.png"
+
+import trivio from "../assets/Trivio.png"
 
 //icons
 import html from "../assets/html.svg"
@@ -28,8 +33,9 @@ import tailwind from "../assets/tailwind.svg"
 import figma from "../assets/figma.svg"
 import android from "../assets/android studio.svg"
 import api from "../assets/api.svg"
-import python from "../assets/python.svg"
 import json from "../assets/json.svg"
+import python from "../assets/python icon.svg"
+import wordpress from "../assets/wordpress icon.svg"
 
 export {
   gow1,
@@ -57,4 +63,8 @@ export {
   iubb,
   kuu,
   lexchina,
+  zaan,
+  themecrafted,
+  wordpress,
+  trivio
 };
