@@ -18,11 +18,6 @@ const Projects = () => {
   const col2 = useRef(null);
   const col3 = useRef(null);
 
-  const glowRef1 = useRef(null);
-  const glowRef2 = useRef(null);
-  const glowRef3 = useRef(null);
-  const glowRef4 = useRef(null);
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       const tl = gsap.timeline({
@@ -38,12 +33,6 @@ const Projects = () => {
         [sectionRef.current, col1.current, col2.current, col3.current],
         { opacity: 0, y: 50 },
         { opacity: 1, y: 0, duration: 1.2, stagger: 0.6, ease: "power2.inOut" }
-      );
-
-      tl.fromTo(
-        [glowRef1.current, glowRef2.current, glowRef3.current, glowRef4.current,],
-        { scale: 0.2, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 1.2,  ease: "power2.inOut" },
       );
     }
   }, []);
@@ -142,14 +131,6 @@ const Projects = () => {
               />
             ))}
           </div>
-
-          <div ref={glowRef1} className="absolute -right-12 top-10 bg-radient-ellipse-c from-gradientStartYellow from-15% to-gradientEndYellow to-60% filter m-auto w-[68%] h-[8%] lg:w-[53%] lg:h-[23%]  xl:w-[45%] xl:h-[38%] blur-[14px] rounded-full -z-10"></div>
-
-          <div ref={glowRef2}  className="flex lg:hidden absolute -left-20 top-[50rem] md:top-[65rem] bg-radient-ellipse-c from-gradientStartYellow from-15% to-gradientEndYellow to-60% filter m-auto w-[68%] h-[8%] blur-[14px] xl:blur-[20px] rounded-full -z-10"></div>
-
-          <div ref={glowRef3}  className="flex lg:hidden absolute -right-12 bottom-[50rem] md:bottom-[65rem] bg-radient-ellipse-c from-gradientStartYellow from-15% to-gradientEndYellow to-60% filter m-auto w-[68%] h-[8%] blur-[14px] rounded-full -z-10"></div>
-
-          <div ref={glowRef4}  className="absolute -left-20 bottom-0 lg:bottom-20 xl:bottom-0 bg-radient-ellipse-c from-gradientStartYellow from-15% to-gradientEndYellow to-60% filter m-auto w-[68%] h-[8%] lg:w-[53%] lg:h-[23%] xl:w-[45%] xl:h-[38%] blur-[14px] xl:blur-[20px] rounded-full -z-10"></div>
         </div>
       </div>
     </Section>

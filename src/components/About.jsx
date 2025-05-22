@@ -59,12 +59,12 @@ const About = () => {
             />
             <div 
               ref={glowRef}
-              className="absolute -top-[2rem] lg:top-[1rem] -left-[1rem] xl:-left-[1rem] bg-radient-ellipse-c from-gradientStartYellow from-15% to-gradientEndYellow to-60% filter m-auto w-32 h-32 md:w-44 md:h-44 blur-[14px] rounded-full -z-10"></div>
+              className="absolute -top-[2rem] lg:top-[1rem] -left-[1rem] xl:-left-[1rem] bg-radient-ellipse-c from-gradientStartBlue/30 to-gradientEndBlue/30 m-auto w-32 h-32 md:w-50 md:h-50 blur-[40px] rounded-full -z-10"></div>
             <div className="relative">
               <p 
                 ref={descRef}
                 className="font-dmSans text-[0.5rem] sm:text-[0.65rem] md:text-xs lg:text-xs xl:text-sm 2xl:text-base text-gray text-justify z-10">
-              Hello! My name is Gabriel Gono Asis, and I'm an 18-year-old third-year student at Bath Spa University RAK. I'm passionate about the digital world and have honed my skills in UI/UX design, front-end development, prototyping, and other digital design disciplines. <br /> <br /> Throughout my academic journey, I've developed a keen eye for design and a strong understanding of the latest technologies and trends in the digital space. My coursework and projects have equipped me with the ability to create user-friendly and visually appealing interfaces, ensuring a seamless and engaging user experience.
+              Hello! My name is Gabriel Gono Asis, and I'm an 19-year-old third-year student at Bath Spa University RAK. I'm passionate about the digital world and have honed my skills in UI/UX design, front-end development, prototyping, and other digital design disciplines. <br /> <br /> Throughout my academic journey, I've developed a keen eye for design and a strong understanding of the latest technologies and trends in the digital space. My coursework and projects have equipped me with the ability to create user-friendly and visually appealing interfaces, ensuring a seamless and engaging user experience.
               </p>
             </div>
           </div>

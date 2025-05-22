@@ -69,10 +69,10 @@ const Hero = () => {
               </div>
             </div>
             <div className="flex justify-end w-full relative">
-              <div className="relative flex items-end justify-end">
+              <div className="relative flex items-center justify-center">
                 <div 
                   ref={glowRef}
-                  className="absolute m-auto mr-6 mb-2 w-[86%] h-[76%] bg-radient-ellipse-c from-gradientStartYellow from-35% to-gradientEndOrange to-80% filter blur-[20px] z-10"></div>
+                  className="absolute w-[250px] h-[50px] bg-radient-ellipse-c from-gradientStartBlue/50 to-gradientEndBlue/50 blur-[40px] z-10 rounded-full"></div>
                 <p 
                   ref={titleRef}
                   className="text-black font-roboto text-lg sm:text-2xl lg:text-4xl xl:text-[3rem] text-end z-20 relative">

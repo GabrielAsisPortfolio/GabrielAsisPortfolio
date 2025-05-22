@@ -61,6 +61,13 @@ export default {
         gradientEndOrange: '#C9887D',
         gradientEndYellow: '#F6C3B0',
         gradientEndPeach: '#EDC9AF',
+        gradientStartBlue: '#5299F3',
+        gradientEndBlue: '#82AEE6',
+        primary: '#4C7EBE',
+        secondary: '#82AEE6',
+        accent: '#5299F3',
+        black: '#121315',
+        offWhite: '#EFF2F8',
       },
       fontFamily: {
         dmSans: ['DM Sans', 'sans-serif'],

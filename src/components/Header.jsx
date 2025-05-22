@@ -27,7 +27,7 @@ const Header = () => {
   }, [menuOpen]);
 
   return (
-    <div className="top-0 py-2 lg:py-6 z-50 bg-lightPeach lg:bg-lightPeach/80 border-b border-black/60 lg:backdrop-blur-sm text-black">
+    <div className="top-0 py-2 lg:py-6 z-50 bg-white border-b border-black/60 lg:backdrop-blur-sm text-black">
       <div className="flex items-center px-5 lg:px-7.5 xl:px-14 max-lg:py-4">
         <a className="block w-[12rem]" href="#hero">
           <h1 className="font-sonderSans text-2xl lg:text-3xl">GA</h1>
@@ -43,7 +43,7 @@ const Header = () => {
           </button>
         </div>
 
-        <nav className={`${menuOpen ? "flex w-full h-full py-96" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-bgPeach2/90 lg:bg-none lg:backdrop-blur-0 backdrop-blur-sm lg:static lg:flex lg:ml-auto  lg:bg-transparent z-40`}>
+        <nav className={`${menuOpen ? "flex w-full h-full py-96" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-offWhite/90 lg:bg-none lg:backdrop-blur-0 backdrop-blur-sm lg:static lg:flex lg:ml-auto  lg:bg-transparent z-40`}>
           <div className={`${menuOpen ? "w-full h-full backdrop-blur-sm" : ""} relative z-2 flex flex-col items-center justify-center ml-auto lg:flex-row`}>
             {navigation.map((item) => (
               <a 
