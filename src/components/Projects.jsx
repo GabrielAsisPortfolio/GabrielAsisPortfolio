@@ -46,11 +46,10 @@ const Projects = () => {
           className="mb-8"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-2">
-          <div ref={col1} className="flex lg:hidden xl:flex flex-col gap-y-2 mb-2 lg:mb-0">
-            {projectDetails.slice(0, 2).map((project) => (
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-6">
+          {projectDetails.map((project) => (
+            <div key={project.id} className="flex flex-col h-full">
               <ProjectBox 
-                key={project.id}
                 title={project.title}
                 urlTitle={project.urlTitle}
                 createdWhen={project.createdWhen}
@@ -60,77 +59,10 @@ const Projects = () => {
                 url={project.url}
                 categories={project.categories}
                 flex={project.flex}
+                className="h-full"
               />
-            ))}
-          </div>
-
-          <div ref={col2} className="flex lg:hidden xl:flex flex-col gap-y-2 mb-2 lg:mb-0">
-            {projectDetails.slice(2, 4).map((project) => (
-              <ProjectBox 
-                key={project.id}
-                title={project.title}
-                urlTitle={project.urlTitle}
-                createdWhen={project.createdWhen}
-                img1={project.img1}
-                img2={project.img2}
-                img3={project.img3}
-                url={project.url}
-                categories={project.categories}
-                flex={project.flex}
-              />
-            ))}
-          </div>
-
-          <div ref={col3} className="flex lg:hidden xl:flex flex-col gap-y-2">
-            {projectDetails.slice(4, 6).map((project) => (
-              <ProjectBox 
-                key={project.id}
-                title={project.title}
-                urlTitle={project.urlTitle}
-                createdWhen={project.createdWhen}
-                img1={project.img1}
-                img2={project.img2}
-                img3={project.img3}
-                url={project.url}
-                categories={project.categories}
-                flex={project.flex}
-              />
-            ))}
-          </div>
-
-          <div className="hidden lg:flex xl:hidden flex-col gap-y-2 mb-2 lg:mb-0">
-            {[0, 3, 4].map((index) => (
-              <ProjectBox 
-                key={projectDetails[index].id}
-                title={projectDetails[index].title}
-                urlTitle={projectDetails[index].urlTitle}
-                createdWhen={projectDetails[index].createdWhen}
-                img1={projectDetails[index].img1}
-                img2={projectDetails[index].img2}
-                img3={projectDetails[index].img3}
-                url={projectDetails[index].url}
-                categories={projectDetails[index].categories}
-                flex={projectDetails[index].flex}
-              />
-            ))}
-          </div>
-
-          <div className="hidden lg:flex xl:hidden flex-col gap-y-2 mb-2 lg:mb-0">
-            {[2, 1, 5].map((index) => (
-              <ProjectBox 
-                key={projectDetails[index].id}
-                title={projectDetails[index].title}
-                urlTitle={projectDetails[index].urlTitle}
-                createdWhen={projectDetails[index].createdWhen}
-                img1={projectDetails[index].img1}
-                img2={projectDetails[index].img2}
-                img3={projectDetails[index].img3}
-                url={projectDetails[index].url}
-                categories={projectDetails[index].categories}
-                flex={projectDetails[index].flex}
-              />
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </Section>

@@ -32,57 +32,33 @@ const categoryIcons = {
 
 const ProjectBox = ({ title, urlTitle, createdWhen, img1, img2, img3, url, categories, flex }) => {
   return (
-  <div className="bg-bgPeach backdrop-blur-lg border-[1px] border-black/5 shadow-lg rounded-lg h-fit w-full relative overflow-hidden">
-    <div className="py-6 px-6 w-full">
-      <div className={` ${flex === "col" ? "flex" : "hidden"} flex-${flex} mb-2 justify-between w-full`}>
-        <img 
-          src={img1} 
-          className={`w-full h-auto mb-1 lg:mb-2`}
-          alt="Image 1" /> 
-      </div>
-
-      <div className={` ${flex === "row" ? "flex" : "hidden"} flex-${flex} mb-2 justify-between w-full`}>
-        <img 
-          src={img1} 
-          className=" w-[33%]"
-          alt="Image 1" /> 
-
-        <img 
-          src={img2} 
-          className=" w-[33%]"
-          alt="Image 2" /> 
-
-        <img 
-          src={img3} 
-          className=" w-[33%]"
-          alt="Image 3" /> 
-      </div>
-
-      <div className="flex flex-col md:flex-row justify-between items-start mb-8">
-        <div className="flex flex-col items-start">
-          <h1 className="font-roboto font-medium text-xl lg:text-[1.4rem]">{title}</h1>
-          <p className="font-roboto text-xs italic font-extralight mb-3 md:mb-0">{createdWhen}</p>
+    <a href={url} className="bg-offWhite rounded-xl w-full relative overflow-hidden h-full hover:cursor-pointer">
+      <div className="py-4 px-4 w-full">
+        <div className={`mb-2 justify-between w-full overflow-hidden rounded-lg border-black/30 border group`}>
+          <img 
+            src={img1} 
+            className="w-full h-auto aspect-[16/9] object-cover object-top transition-transform duration-300 ease-in-out group-hover:scale-105"
+            alt="Image 1" 
+          /> 
         </div>
 
-        <div className="flex flex-row gap-x-2 mt-1 lg:mt-2">
-          {categories.map(category => (
-            <img 
-              key={category}
-              src={categoryIcons[category]} 
-              className="h-5 lg:h-4"
-              alt={category} 
-            />
-          ))}
+        <div className="flex flex-col justify-start items-start gap-4">
+          <div className="flex flex-row gap-x-2 mt-1 lg:mt-2">
+            {categories.map(category => (
+              <img 
+                key={category}
+                src={categoryIcons[category]} 
+                className="h-5 lg:h-4"  
+                alt={category} 
+              />
+            ))}
+          </div>
+          <div className="flex flex-col items-start">
+            <h1 className="font-roboto font-medium text-xl lg:text-[1.4rem]">{title}</h1>
+          </div>
         </div>
       </div>
-
-      <Button 
-        text="CHECK OUT"
-        href={url}
-      />
-    </div>
-    
-  </div>
+    </a>
   )
 }
 

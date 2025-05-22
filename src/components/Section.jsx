@@ -2,19 +2,19 @@ import X from "../assets/X.svg"
 
 const Section = ({ children, bottomLine, id }) => {
   return (
-    <div className="flex justify-center relative" id={id}>
+    <div className="flex justify-center relative py-16" id={id}>
       {children}
       {bottomLine && (
         <>
           <img
             src={X}
-            className="absolute -bottom-[0.43rem] -left-[2.5rem] md:-left-[2.5rem] lg:-left-[3rem]"
+            className="absolute -bottom-[0.43rem] -left-[2.5rem] md:-left-[2.5rem] lg:-left-[4.5rem]"
             width={15}
             height={15}  
             alt="X corners" />
           <img
             src={X}
-            className="absolute -bottom-[0.43rem] -right-[2.5rem] md:-right-[2.5rem] lg:-right-[3rem]"
+            className="absolute -bottom-[0.43rem] -right-[2.5rem] md:-right-[2.5rem] lg:-right-[4.5rem]"
             width={15}
             height={15}      
             alt="X corners" />

@@ -51,7 +51,7 @@ const About = () => {
 
           <div 
             ref={headingRef}
-            className="flex flex-col w-full mb-4 lg:mb-0 lg:w-[50%]">
+            className="flex flex-col w-full mb-4 lg:mb-0 flex-[1.5]">
             <Heading 
               title="About-"
               subtitle="get to know me"
@@ -63,18 +63,18 @@ const About = () => {
             <div className="relative">
               <p 
                 ref={descRef}
-                className="font-dmSans text-[0.5rem] sm:text-[0.65rem] md:text-xs lg:text-xs xl:text-sm 2xl:text-base text-gray text-justify z-10">
+                className="font-dmSans text-gray z-10">
               Hello! My name is Gabriel Gono Asis, and I'm an 19-year-old third-year student at Bath Spa University RAK. I'm passionate about the digital world and have honed my skills in UI/UX design, front-end development, prototyping, and other digital design disciplines. <br /> <br /> Throughout my academic journey, I've developed a keen eye for design and a strong understanding of the latest technologies and trends in the digital space. My coursework and projects have equipped me with the ability to create user-friendly and visually appealing interfaces, ensuring a seamless and engaging user experience.
               </p>
             </div>
           </div>
 
           {/* FACE */}
-          <div className="w-full h-full lg:w-[45%] flex flex-row items-center justify-between lg:justify-center lg:items-center relative">
+          <div className="w-full h-full flex-1 flex flex-row items-center justify-between lg:justify-center lg:items-center relative">
             <img 
               ref={imgRef}
               src={face} 
-              className="w-2/5 lg:w-3/5 xl:w-[56%] 2xl:w-[50%] drop-shadow-xl hidden"
+              className="w-2/5 lg:w-3/5 xl:w-[56%] 2xl:w-[50%] drop-shadow-xl"
               alt="Face" 
             />
 
