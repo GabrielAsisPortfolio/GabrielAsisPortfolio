@@ -2,7 +2,7 @@ import X from "../assets/X.svg"
 
 const Section = ({ children, bottomLine, id }) => {
   return (
-    <div className="flex justify-center relative py-16" id={id}>
+    <div className="flex justify-center relative py-10 md:py-14 lg:py-16 " id={id}>
       {children}
       {bottomLine && (
         <>

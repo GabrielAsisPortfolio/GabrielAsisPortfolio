@@ -39,14 +39,14 @@ const Projects = () => {
   
   return (
     <Section bottomLine={false} id="projects">
-      <div className="container py-8" ref={sectionRef}>
+      <div className="container" ref={sectionRef}>
         <Heading 
           title="Projects-"
           subtitle="discover my work"
           className="mb-8"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-6">
           {projectDetails.map((project) => (
             <div key={project.id} className="flex flex-col h-full">
               <ProjectBox 

@@ -33,7 +33,7 @@ const categoryIcons = {
 const ProjectBox = ({ title, img, url, categories }) => {
   return (
     <a href={url} className="bg-offWhite rounded-xl w-full relative overflow-hidden h-full hover:cursor-pointer">
-      <div className="py-4 px-4 w-full">
+      <div className="py-3 px-3 sm:py-4 sm:px-4 w-full">
         <div className={`mb-2 justify-between w-full overflow-hidden rounded-lg border-black/30 border group`}>
           <img 
             src={img} 
@@ -43,11 +43,11 @@ const ProjectBox = ({ title, img, url, categories }) => {
         </div>
 
         <div className="flex flex-col justify-start items-start gap-4">
-          <div className="flex flex-row gap-x-2 mt-1 lg:mt-2">
+          <div className="flex flex-row flex-wrap gap-1 sm:gap-2 mt-1 lg:mt-2">
             {categories.map(category => {
               const Icon = categoryIcons[category];
               return (
-                <span key={category} className="flex items-center gap-1 bg-gray-100 rounded-full px-5 py-1.5 text-xs font-medium bg-accent/20">
+                <span key={category} className="flex items-center gap-1 bg-gray-100 rounded-full px-4 py-1.5 sm:px-5 sm:py-1.5 text-xs font-medium bg-accent/20">
                   {typeof Icon === "string" ? (
                     <img src={Icon} className="h-4 w-auto text-accent" alt={category} />
                   ) : (
