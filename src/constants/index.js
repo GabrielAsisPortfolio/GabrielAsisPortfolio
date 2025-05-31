@@ -86,7 +86,7 @@ export const projectDetails = [
     title: "KUU China",
     img: kuu,
     createdWhen: "Created on 2nd yr of College",
-    url: "https://www.kuu.net/index.php/en/",
+    url: "https://www.kuu.net/en/",
     categories: ["WordPress", "Landing Page"],
     flex: "col",
   },
