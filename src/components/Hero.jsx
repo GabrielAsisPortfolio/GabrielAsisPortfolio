@@ -76,7 +76,7 @@ const Hero = () => {
                 <p 
                   ref={titleRef}
                   className="text-black font-roboto text-lg sm:text-2xl lg:text-4xl xl:text-[3rem] text-end z-20 relative">
-                  Front End Dev<br/>
+                  Website Developer<br/>
                   Digital Designer
                 </p>
               </div>
