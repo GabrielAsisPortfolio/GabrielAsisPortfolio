@@ -1,5 +1,5 @@
 import Section from "./Section"
-import face from "../assets/Face.png"
+import face from "../assets/Graduation Photo No bg.jpeg"
 import bathspa from "../assets/bathspa logo.png"
 import Heading from "./Heading"
 
@@ -47,7 +47,7 @@ const About = () => {
   return (
     <Section bottomLine={true} id="#about">
       <div className="container py-8"  id="about">
-        <div className="flex flex-col lg:flex-row justify-between items-center relative h-full" ref={sectionRef}>
+        <div className="flex flex-col lg:flex-row justify-between items-center relative h-full gap-10" ref={sectionRef}>
 
           <div 
             ref={headingRef}
@@ -64,24 +64,26 @@ const About = () => {
               <p 
                 ref={descRef}
                 className="font-dmSans text-gray z-10">
-              Hello! My name is Gabriel Gono Asis, and I'm an 19-year-old third-year student at Bath Spa University RAK. I'm passionate about the digital world and have honed my skills in UI/UX design, front-end development, prototyping, and other digital design disciplines. <br /> <br /> Throughout my academic journey, I've developed a keen eye for design and a strong understanding of the latest technologies and trends in the digital space. My coursework and projects have equipped me with the ability to create user-friendly and visually appealing interfaces, ensuring a seamless and engaging user experience.
+              Hello! My name is Gabriel Gono Asis, and I’m a graduate of Bath Spa University RAK with a BSc (Hons) in Creative Computing. I’m passionate about the digital world and have honed my skills in web development, UI/UX design, prototyping, and other digital design disciplines.
+              <br /><br />
+              Throughout my academic journey, I developed a keen eye for design and a strong understanding of the latest technologies and trends in the digital space. My coursework and projects equipped me with the ability to create user-friendly, visually appealing, and functional websites, ensuring a seamless and engaging user experience.
               </p>
             </div>
           </div>
 
           {/* FACE */}
-          <div className="w-full h-full flex-1 flex flex-row items-center justify-between lg:justify-center lg:items-center relative">
+          <div className="gap-4 lg:gap-0 max-w-full w-full h-full flex-1 flex flex-row items-center justify-betweem lg:justify-center lg:items-center relative">
             <img 
               ref={imgRef}
               src={face} 
-              className="w-2/5 lg:w-3/5 xl:w-[56%] 2xl:w-[50%] drop-shadow-xl"
+              className="w-[47%] lg:w-3/5 xl:w-[56%] 2xl:w-[90%] drop-shadow-xl"
               alt="Face" 
             />
 
             <img  
               ref={imgRef2}
               src={bathspa}
-              className="w-2/5 lg:hidden"
+              className="w-[47%] lg:hidden"
               alt="Bath spa Logo" 
             />
           </div>
