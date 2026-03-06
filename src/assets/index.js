@@ -13,6 +13,8 @@ import kuu from "../assets/KUU China.png"
 import lexchina from "../assets/LexChina.png"
 import zaan from "../assets/Zaan.png"
 
+import loom from "../assets/LoomAesthetics.png"
+
 import themecrafted from "../assets/ThemeCrafted.png"
 
 import trivio from "../assets/Trivio.png"
@@ -32,5 +34,6 @@ export {
   zaan,
   themecrafted,
   wordpress,
-  trivio
+  trivio,
+  loom
 };
