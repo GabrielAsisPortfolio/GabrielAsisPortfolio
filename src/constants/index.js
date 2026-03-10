@@ -37,7 +37,7 @@ export const projectDetails = [
     title: "Loom Aesthetics",
     img: loom,
     url: "https://loomaesthetics.com/",
-    categories: ["WordPress"],
+    categories: ["WordPress", "Healthcare"],
     flex: "col",
   },
   {
@@ -53,7 +53,7 @@ export const projectDetails = [
     title: "Trivio",
     img: trivio,
     url: "https://trivio-site.vercel.app/",
-    categories: ["Full-Stack"],
+    categories: ["Full-Stack", "Game"],
     flex: "col",
   },
   {

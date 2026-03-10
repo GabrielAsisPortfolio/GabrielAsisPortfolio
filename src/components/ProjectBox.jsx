@@ -10,6 +10,8 @@ import {
   Layers2,
   AppWindow,
   ShoppingBag,
+  HeartPlus,
+  Gamepad2
 } from "lucide-react";
 
 import {
@@ -24,10 +26,12 @@ const categoryIcons = {
   "Landing Page": AppWindow,
   "Full-Stack": Layers,
   "Organization": Building2,
+  "Healthcare": HeartPlus,
   "Tech Startup": Rocket,
   "Smartphone App": Smartphone,
   "Python": FileCode2,
   "E-commerce": ShoppingBag,
+  "Game": Gamepad2,
 };
 
 const ProjectBox = ({ title, img, url, categories }) => {
