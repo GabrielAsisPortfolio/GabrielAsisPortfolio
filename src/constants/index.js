@@ -10,7 +10,8 @@ import {
   zaan,
   themecrafted,
   trivio,
-  loom
+  loom,
+  wordpressBg
 } from "../assets";
 
 export const navigation = [
@@ -33,7 +34,7 @@ export const navigation = [
 
 export const projectDetails = [
   {
-    id: "3",
+    id: "1",
     title: "Loom Aesthetics",
     img: loom,
     url: "https://loomaesthetics.com/",
@@ -41,7 +42,7 @@ export const projectDetails = [
     flex: "col",
   },
   {
-    id: "1",
+    id: "2",
     title: "ThemeCrafted",
     img: themecrafted,
     url: "https://themecrafted-frontend.onrender.com/",
@@ -49,13 +50,56 @@ export const projectDetails = [
     flex: "col",
   },
   {
-    id: "2",
+    id: "3",
     title: "Trivio",
     img: trivio,
     url: "https://trivio-site.vercel.app/",
     categories: ["Full-Stack", "Game"],
     flex: "col",
   },
+  {
+    id: "8",
+    title: "Other WordPress Projects",
+    img: wordpressBg,
+    url: "https://linen-sleet-7a2.notion.site/AIFOD-WordPress-Projects-31f147d07902804dbb55e6d2abd1a62f",
+    categories: ["WordPress", "Organization"],
+    flex: "col",
+  },
+  // {
+  //   id: "8",
+  //   title: "AI for Developing Countries Forum",
+  //   img: aifod,
+  //   createdWhen: "Created on 2nd yr of College",
+  //   url: "https://aifod.org/vienna",
+  //   categories: ["WordPress", "Organization"],
+  //   flex: "col",
+  // },
+  // {
+  //   id: "9",
+  //   title: "KUU China",
+  //   img: kuu,
+  //   createdWhen: "Created on 2nd yr of College",
+  //   url: "https://www.kuu.net/en/",
+  //   categories: ["WordPress", "Landing Page"],
+  //   flex: "col",
+  // },
+  // {
+  //   id: "10",
+  //   title: "Zaan",
+  //   img: zaan,
+  //   url: "https://zaan.com/",
+  //   categories: ["WordPress", "Tech Startup"],
+  //   flex: "col",
+  // },
+  // {
+  //   id: "11",
+  //   title: "LexChina",
+  //   img: lexchina,
+  //   createdWhen: "Created on 2nd yr of College",
+  //   url: "https://lexchina.org/",
+  //   categories: ["WordPress", "Organization"],
+  //   flex: "col",
+  // },
   {
     id: "4",
     title: "God of War",
@@ -96,39 +140,4 @@ export const projectDetails = [
     categories: ["Python"],
     flex: "col",
   },
-  // {
-  //   id: "4",
-  //   title: "AI for Developing Countries Forum",
-  //   img: aifod,
-  //   createdWhen: "Created on 2nd yr of College",
-  //   url: "https://aifod.org/",
-  //   categories: ["WordPress", "Organization"],
-  //   flex: "col",
-  // },
-  // {
-  //   id: "5",
-  //   title: "KUU China",
-  //   img: kuu,
-  //   createdWhen: "Created on 2nd yr of College",
-  //   url: "https://www.kuu.net/en/",
-  //   categories: ["WordPress", "Landing Page"],
-  //   flex: "col",
-  // },
-  // {
-  //   id: "7",
-  //   title: "Zaan",
-  //   img: zaan,
-  //   url: "https://zaan.com/",
-  //   categories: ["WordPress", "Tech Startup"],
-  //   flex: "col",
-  // },
-  // {
-  //   id: "6",
-  //   title: "LexChina",
-  //   img: lexchina,
-  //   createdWhen: "Created on 2nd yr of College",
-  //   url: "https://lexchina.org/",
-  //   categories: ["WordPress", "Organization"],
-  //   flex: "col",
-  // },
 ];

@@ -19,6 +19,8 @@ import themecrafted from "../assets/ThemeCrafted.png"
 
 import trivio from "../assets/Trivio.png"
 
+import wordpressBg from "../assets/WordPressBackground.jpg"
+
 //icons
 import wordpress from "../assets/wordpress icon.svg"
 
@@ -35,5 +37,6 @@ export {
   themecrafted,
   wordpress,
   trivio,
-  loom
+  loom,
+  wordpressBg
 };

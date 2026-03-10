@@ -36,7 +36,7 @@ const categoryIcons = {
 
 const ProjectBox = ({ title, img, url, categories }) => {
   return (
-    <a href={url} className="bg-offWhite rounded-xl w-full relative overflow-hidden h-full hover:cursor-pointer">
+    <a target="blank" href={url} className="bg-offWhite rounded-xl w-full relative overflow-hidden h-full hover:cursor-pointer">
       <div className="py-3 px-3 sm:py-4 sm:px-4 w-full">
         <div className={`mb-2 justify-between w-full overflow-hidden rounded-lg border-black/30 border group`}>
           <img
