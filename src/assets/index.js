@@ -19,7 +19,7 @@ import themecrafted from "../assets/ThemeCrafted.png"
 
 import trivio from "../assets/Trivio.png"
 
-import wordpressBg from "../assets/WordPressBackground.png"
+import wordpressBg from "../assets/WordpressBackground.png"
 
 //icons
 import wordpress from "../assets/wordpress icon.svg"
